@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
+import LogoTitle from '../../assets/images/Me.jpeg'
 import Logo from './Logo'
 import './index.scss'
 import { useEffect, useState } from 'react'
@@ -52,6 +53,7 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone">
+        <div className=''>
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
@@ -62,10 +64,7 @@ const Home = () => {
             <span className={`${letterClass} _17`}>m</span>
             <span className={`${letterClass} _18`}></span>
 
-            {/* <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            /> */}
+           
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -84,7 +83,16 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
-
+          </div>
+          {/* <div> */}
+          <img
+              src={LogoTitle}
+              height={400}
+              width={400}
+              className='heroImg'
+              alt="JavaScript Developer Name, Web Developer Name"
+            />
+            {/* </div> */}
         </div>
         
         <Logo />

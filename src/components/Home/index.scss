@@ -1,11 +1,28 @@
 .home-page {
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 18%;
+    right:10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
+    width: -webkit-fill-available;
+    margin-right: 80px;
     max-height: 90%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .heroImg {
+    border: 2px solid transparent;
+    border-radius: 12px;
+    box-shadow:
+  4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
   }
 
   h1 {
@@ -113,13 +130,18 @@
     position: initial;
     transform: none;
     width:100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
     box-sizing: border-box;
     margin-left: 10px;
     margin-top: 50px;
+    margin-right: 0px;
+    max-height: fit-content;
+    font-size: 10px;
   }
-
+  
   .home-page .flat-button {
     float: none;
     display: block;
@@ -128,37 +150,46 @@
     margin-left: 10px;
   }
 
-  .logo-container {
-    position: relative;
-    width: 100px;
-    height: auto;
-    // right: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16rem;
+  // .logo-container {
+  //   position: relative;
+  //   width: 100px;
+  //   height: auto;
+  //   right: 0;
+  //   box-sizing: border-box;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin-top: 16rem;
+  // }
+
+  .heroImg{
+    height: 250px;
+    width: 250px;
   }
+  // .logo-container svg {
+  //   position: absolute;
+  //   top: auto;
+  //   right: auto;
+  //   bottom: auto;
+  //   left: 0;
+  //   margin: auto;
+  // }
 
-  .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-  }
+  // .home-logo {
+  //   position: ;
+  //   width: 50px;
+  //   height: auto;
+  //   right: 0;
+  //   box-sizing: border-box;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin-top: 16rem;
 
-  .home-logo {
-    // position: ;
-    width: 50px;
-    height: auto;
-    // right: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16rem;
+  // }
 
+  .home-page h1 {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
